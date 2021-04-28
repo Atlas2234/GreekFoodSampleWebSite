@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* 
+Variables 
+*/
+:root {
+  --clr-header1: #e6e6e6;
+  --clr-header2: #dfdfdf;
+  --clr-header3: #bebebe;
+  --clr-button: #f79131;
+  --clr-text: #dfdfdf;
+  --clr-link: #3ec8ff;
+  --clr-background: #5a5a5a;
+}
+
+/* Reset Default Browser Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* 
+Global Styles 
+*/
+
+/* global style for body */
+body {
+  line-height: 1.2;
+  font-size: 0.8rem;
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+}
+/* global style for links */
+a {
+  text-decoration: none;
+}
+/* global style for all headers */
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+.page {
+}
+
+/* Hero Styling */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/food-hero-mobile.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero-head {
+  text-align: center;
+  margin-top: 35%;
+  /* background-color: red; */
+}
+.call-to-action {
+  background-color: var(--clr-button);
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  margin: 1rem auto;
+  border-style: none;
+  color: var(--clr-text);
+  font-weight: bold;
+  border-radius: 3px;
+  min-width: 23%;
+  text-align: center;
+}
+
+.key {
+  color: orange;
+}
+
+/* More Section Styline */
+.more {
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/food-hero-desktop.jpeg");
+  }
+  .hero-head {
+    text-align: center;
+    margin-top: 15%;
+    /* background-color: red; */
+  }
+  .call-to-action {
+    min-width: 5%;
+  }
+}
