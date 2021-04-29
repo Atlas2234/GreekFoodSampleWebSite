@@ -11,6 +11,7 @@ Variables
   --clr-text: #dfdfdf;
   --clr-link: #3ec8ff;
   --clr-background: #5a5a5a;
+  --clr-text-dark: #20447a;
 }
 
 /* Reset Default Browser Settings */
@@ -89,7 +90,7 @@ h3 {
 
 /* More Section Styline */
 .more {
-  height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -100,7 +101,7 @@ h3 {
 }
 .more-header {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 hr {
   margin: 0.5rem auto;
@@ -139,6 +140,42 @@ hr {
   margin-bottom: 1rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   padding: 1rem 1rem;
+}
+
+/* Card Styling */
+.cards {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./images/mobile-menu.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#c2,
+#c3 {
+  display: none;
+}
+#c1 {
+  min-height: 15rem;
+  min-width: 15rem;
+  height: 20rem;
+  width: 20rem;
+}
+#image1 {
+  height: 80%;
+  background-image: url("./images/kebob.jpeg");
+  background-size: cover;
+  background-position-y: center;
+}
+#text1 {
+  text-align: center;
+  color: var(--clr-text-dark);
+  background-color: white;
+  padding: 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -204,5 +241,74 @@ hr {
   .more-header hr {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  /* Card Page Desktop */
+  .cards {
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("./images/desktop-menu.jpeg");
+  }
+  .containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #c1 {
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 30rem;
+    width: 30rem;
+  }
+  #image1 {
+    height: 80%;
+    background-image: url("./images/kebob.jpeg");
+    background-size: cover;
+    background-position-y: center;
+  }
+  #text1 {
+    text-align: center;
+    color: var(--clr-text-dark);
+    background-color: white;
+    padding: 1rem 0;
+  }
+  #c2 {
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 30rem;
+    width: 30rem;
+    display: initial;
+  }
+  #image2 {
+    height: 80%;
+    background-image: url("./images/tart.jpeg");
+    background-size: cover;
+    background-position-y: center;
+  }
+  #text2 {
+    text-align: center;
+    color: var(--clr-text-dark);
+    background-color: white;
+    padding: 1rem 0;
+  }
+  #c3 {
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 30rem;
+    width: 30rem;
+    display: initial;
+  }
+  #image3 {
+    height: 80%;
+    background-image: url("./images/dish.jpeg");
+    background-size: cover;
+    background-position-y: center;
+  }
+  #text3 {
+    text-align: center;
+    color: var(--clr-text-dark);
+    background-color: white;
+    padding: 1rem 0;
   }
 }
