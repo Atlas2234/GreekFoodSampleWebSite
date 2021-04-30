@@ -178,6 +178,35 @@ hr {
   padding: 1rem 0;
 }
 
+/* Info Page Styling */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/info-background-desktop.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.information {
+  height: 35%;
+  width: 70%;
+  margin-top: 10rem;
+}
+.info-picture {
+  height: 80%;
+  background-image: url("./images/meal.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.info-text {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 1rem 1rem;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 8rem;
@@ -310,5 +339,13 @@ hr {
     color: var(--clr-text-dark);
     background-color: white;
     padding: 1rem 0;
+  }
+  /* Info Page Desktop */
+  .information {
+    width: 30%;
+    height: 40%;
+  }
+  .info-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
 }
