@@ -207,6 +207,66 @@ hr {
   padding: 1rem 1rem;
 }
 
+/* Data Page Styling */
+.form-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./images/info-mobile.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: grey; */
+  height: 100%;
+}
+.form-container {
+  /* background-color: red; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 70%;
+  height: 40%;
+}
+form {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 1rem;
+  justify-content: center;
+}
+input {
+  width: 90%;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  border-radius: 2px;
+  border-style: none;
+}
+#field-three {
+  padding-bottom: 5rem;
+}
+.google-container {
+  /* background: green; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  padding: 1.2rem 1.2rem;
+  width: 70%;
+}
+/* footer styling */
+footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buffer {
+  height: 20%;
+}
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 8rem;
@@ -347,5 +407,24 @@ hr {
   }
   .info-text {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  }
+  /* Data Page Desktop */
+  .form-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("./images/info-desktop.jpeg");
+  }
+  .page-container {
+    flex-direction: row;
+    align-content: space-around;
+  }
+  .form-container {
+    width: 40%;
+  }
+  .google-container {
+    width: 40%;
+  }
+  /* Footer Desktop */
+  footer {
+    height: 10vh;
   }
 }
